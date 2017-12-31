@@ -527,7 +527,7 @@ final class SWarena
                     $p->setHealth($health);
                     $p->setFood(20);
                 }
-                $p->sendMessage($this->pg->lang['game.start']);
+                $p->addTitle("§bThe Game Begins","§fGood Luck!",20,70,20);
                 if ($p->getLevel()->getBlock($p->floor()->subtract(0, 2))->getId() == 20)
                     $p->getLevel()->setBlock($p->floor()->subtract(0, 2), Block::get(0), true, false);
                 if ($p->getLevel()->getBlock($p->floor()->subtract(0, 1))->getId() == 20)
